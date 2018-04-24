@@ -1,0 +1,13 @@
+[DEFAULT]
+mqtt_server = 172.16.1.123
+	# IP or FQDN
+mqtt_port = 1883
+mqtt_conntimeout = 60
+mqtt_user = youruser
+mqtt_pass = yourpass
+flask_port = 8088
+
+topicbase = sensor/
+	# This is the root of the channel that all posts will share.
+	# posts to channel: topicbase+type+channel  or "sensor/OneWire/410516A18774FF28"
+	# type and channel comming from the REST POST
